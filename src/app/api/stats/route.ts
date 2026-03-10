@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/stats - 获取统计数据
 export async function GET(request: NextRequest) {
   try {
-    const stats = await memoryStore.getStats();
+    const stats = await fileStore.getStats();
 
     return NextResponse.json({
       success: true,

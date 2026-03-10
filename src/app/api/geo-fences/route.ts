@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/geo-fences - 获取地理围栏列表
 export async function GET(request: NextRequest) {
@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     const search = searchParams.get('search') || undefined;
     const isActive = searchParams.get('isActive') ? searchParams.get('isActive') === 'true' : undefined;
 
-    const result = await memoryStore.getGeoFences({ businessId, search, isActive });
+    const result = await fileStore.getGeoFences({ businessId, search, isActive });
 
     return NextResponse.json({
       success: true,
@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     // 验证企业是否存在
-    const business = await memoryStore.getBusinessById(body.businessId);
+    const business = await fileStore.getBusinessById(body.businessId);
     if (!business) {
       return NextResponse.json(
         { success: false, error: '企业不存在' },
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const newGeoFence = await memoryStore.createGeoFence({
+    const newGeoFence = await fileStore.createGeoFence({
       businessId: body.businessId,
       name: body.name,
       description: body.description || null,

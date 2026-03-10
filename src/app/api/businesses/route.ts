@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/businesses - 获取企业列表
 export async function GET(request: NextRequest) {
@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     const city = searchParams.get('city') || undefined;
     const type = searchParams.get('type') || undefined;
 
-    const result = await memoryStore.getBusinesses({ search, city, type });
+    const result = await fileStore.getBusinesses({ search, city, type });
 
     return NextResponse.json({
       success: true,
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    const newBusiness = await memoryStore.createBusiness({
+    const newBusiness = await fileStore.createBusiness({
       name: body.name,
       description: body.description || null,
       businessType: body.businessType || null,

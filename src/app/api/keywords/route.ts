@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/keywords - 获取关键词列表
 export async function GET(request: NextRequest) {
@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     const search = searchParams.get('search') || undefined;
     const status = searchParams.get('status') || undefined;
 
-    const result = await memoryStore.getKeywords({ businessId, search, status });
+    const result = await fileStore.getKeywords({ businessId, search, status });
 
     return NextResponse.json({
       success: true,
@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     // 验证企业是否存在
-    const business = await memoryStore.getBusinessById(body.businessId);
+    const business = await fileStore.getBusinessById(body.businessId);
     if (!business) {
       return NextResponse.json(
         { success: false, error: '企业不存在' },
@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const newKeyword = await memoryStore.createKeyword({
+    const newKeyword = await fileStore.createKeyword({
       businessId: body.businessId,
       keyword: body.keyword,
       priority: body.priority || 0,

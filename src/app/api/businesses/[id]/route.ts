@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/businesses/[id] - 获取企业详情
 export async function GET(
@@ -10,7 +10,7 @@ export async function GET(
     const { id } = await params;
     const businessId = parseInt(id);
 
-    const result = await memoryStore.getBusinessById(businessId);
+    const result = await fileStore.getBusinessById(businessId);
 
     if (!result) {
       return NextResponse.json(
@@ -42,7 +42,7 @@ export async function PUT(
     const businessId = parseInt(id);
     const body = await request.json();
 
-    const updatedBusiness = await memoryStore.updateBusiness(businessId, {
+    const updatedBusiness = await fileStore.updateBusiness(businessId, {
       name: body.name,
       description: body.description,
       businessType: body.businessType,
@@ -89,7 +89,7 @@ export async function DELETE(
     const { id } = await params;
     const businessId = parseInt(id);
 
-    const deleted = await memoryStore.deleteBusiness(businessId);
+    const deleted = await fileStore.deleteBusiness(businessId);
 
     if (!deleted) {
       return NextResponse.json(

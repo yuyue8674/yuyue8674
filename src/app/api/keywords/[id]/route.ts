@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/keywords/[id] - 获取关键词详情
 export async function GET(
@@ -10,7 +10,7 @@ export async function GET(
     const { id } = await params;
     const keywordId = parseInt(id);
 
-    const result = await memoryStore.getKeywordById(keywordId);
+    const result = await fileStore.getKeywordById(keywordId);
 
     if (!result) {
       return NextResponse.json(
@@ -42,7 +42,7 @@ export async function PUT(
     const keywordId = parseInt(id);
     const body = await request.json();
 
-    const updatedKeyword = await memoryStore.updateKeyword(keywordId, {
+    const updatedKeyword = await fileStore.updateKeyword(keywordId, {
       keyword: body.keyword,
       priority: body.priority,
       matchType: body.matchType,
@@ -79,7 +79,7 @@ export async function DELETE(
     const { id } = await params;
     const keywordId = parseInt(id);
 
-    const deleted = await memoryStore.deleteKeyword(keywordId);
+    const deleted = await fileStore.deleteKeyword(keywordId);
 
     if (!deleted) {
       return NextResponse.json(

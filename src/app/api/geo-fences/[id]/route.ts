@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { memoryStore } from '@/lib/memory-store';
+import { fileStore } from '@/lib/file-store';
 
 // GET /api/geo-fences/[id] - 获取地理围栏详情
 export async function GET(
@@ -10,7 +10,7 @@ export async function GET(
     const { id } = await params;
     const geoFenceId = parseInt(id);
 
-    const result = await memoryStore.getGeoFenceById(geoFenceId);
+    const result = await fileStore.getGeoFenceById(geoFenceId);
 
     if (!result) {
       return NextResponse.json(
@@ -42,7 +42,7 @@ export async function PUT(
     const geoFenceId = parseInt(id);
     const body = await request.json();
 
-    const updatedGeoFence = await memoryStore.updateGeoFence(geoFenceId, {
+    const updatedGeoFence = await fileStore.updateGeoFence(geoFenceId, {
       name: body.name,
       description: body.description,
       centerLatitude: body.centerLatitude,
@@ -83,7 +83,7 @@ export async function DELETE(
     const { id } = await params;
     const geoFenceId = parseInt(id);
 
-    const deleted = await memoryStore.deleteGeoFence(geoFenceId);
+    const deleted = await fileStore.deleteGeoFence(geoFenceId);
 
     if (!deleted) {
       return NextResponse.json(
