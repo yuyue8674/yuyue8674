@@ -10,6 +10,8 @@ import {
   Search,
   Settings,
   Sparkles,
+  Globe,
+  Zap,
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -21,6 +23,8 @@ export default function Sidebar() {
     { icon: Key, label: '关键词管理', href: '/keywords' },
     { icon: MapPin, label: '地理围栏', href: '/geo-fences' },
     { icon: Sparkles, label: 'AI智能搜索', href: '/ai-search', highlight: true },
+    { icon: Zap, label: '平台对接指南', href: '/platform-guide', highlight: true },
+    { icon: Globe, label: '企业目录', href: '/show' },
     { icon: Search, label: '搜索演示', href: '/search' },
   ];
 
