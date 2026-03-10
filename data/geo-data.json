@@ -219,6 +219,54 @@
       "clickCount": 0,
       "createdAt": "2026-03-10T14:31:55.480Z",
       "updatedAt": "2026-03-10T14:31:55.480Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "邹城收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 43,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-10T14:50:38.042Z",
+      "updatedAt": "2026-03-10T14:50:38.042Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "嘉祥收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 44,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-10T14:50:50.505Z",
+      "updatedAt": "2026-03-10T14:50:50.505Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "兖州收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 45,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-10T14:51:05.022Z",
+      "updatedAt": "2026-03-10T14:51:05.022Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "汶上收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 46,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-10T14:51:15.037Z",
+      "updatedAt": "2026-03-10T14:51:15.037Z"
     }
   ],
   "geoFences": [
@@ -539,7 +587,7 @@
     }
   ],
   "nextBusinessId": 6,
-  "nextKeywordId": 43,
+  "nextKeywordId": 47,
   "nextGeoFenceId": 6,
   "nextSearchLogId": 24
 }
