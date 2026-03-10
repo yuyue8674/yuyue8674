@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { db, geoFences } from '@/db';
-import { eq } from 'drizzle-orm';
+import { memoryStore } from '@/lib/memory-store';
 
 // GET /api/geo-fences/[id] - 获取地理围栏详情
 export async function GET(
@@ -11,13 +10,9 @@ export async function GET(
     const { id } = await params;
     const geoFenceId = parseInt(id);
 
-    const result = await db
-      .select()
-      .from(geoFences)
-      .where(eq(geoFences.id, geoFenceId))
-      .limit(1);
+    const result = await memoryStore.getGeoFenceById(geoFenceId);
 
-    if (result.length === 0) {
+    if (!result) {
       return NextResponse.json(
         { success: false, error: '地理围栏不存在' },
         { status: 404 }
@@ -26,7 +21,7 @@ export async function GET(
 
     return NextResponse.json({
       success: true,
-      data: result[0],
+      data: result,
     });
   } catch (error) {
     console.error('获取地理围栏详情失败:', error);
@@ -47,23 +42,18 @@ export async function PUT(
     const geoFenceId = parseInt(id);
     const body = await request.json();
 
-    const updatedGeoFence = await db
-      .update(geoFences)
-      .set({
-        name: body.name,
-        description: body.description,
-        centerLatitude: body.centerLatitude,
-        centerLongitude: body.centerLongitude,
-        radius: body.radius,
-        regionType: body.regionType,
-        polygonCoordinates: body.polygonCoordinates,
-        isActive: body.isActive,
-        updatedAt: new Date(),
-      })
-      .where(eq(geoFences.id, geoFenceId))
-      .returning();
+    const updatedGeoFence = await memoryStore.updateGeoFence(geoFenceId, {
+      name: body.name,
+      description: body.description,
+      centerLatitude: body.centerLatitude,
+      centerLongitude: body.centerLongitude,
+      radius: body.radius,
+      regionType: body.regionType,
+      polygonCoordinates: body.polygonCoordinates,
+      isActive: body.isActive,
+    });
 
-    if (updatedGeoFence.length === 0) {
+    if (!updatedGeoFence) {
       return NextResponse.json(
         { success: false, error: '地理围栏不存在' },
         { status: 404 }
@@ -72,7 +62,7 @@ export async function PUT(
 
     return NextResponse.json({
       success: true,
-      data: updatedGeoFence[0],
+      data: updatedGeoFence,
       message: '地理围栏更新成功',
     });
   } catch (error) {
@@ -93,12 +83,9 @@ export async function DELETE(
     const { id } = await params;
     const geoFenceId = parseInt(id);
 
-    const deletedGeoFence = await db
-      .delete(geoFences)
-      .where(eq(geoFences.id, geoFenceId))
-      .returning();
+    const deleted = await memoryStore.deleteGeoFence(geoFenceId);
 
-    if (deletedGeoFence.length === 0) {
+    if (!deleted) {
       return NextResponse.json(
         { success: false, error: '地理围栏不存在' },
         { status: 404 }

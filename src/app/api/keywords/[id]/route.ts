@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { db, keywords } from '@/db';
-import { eq } from 'drizzle-orm';
+import { memoryStore } from '@/lib/memory-store';
 
 // GET /api/keywords/[id] - 获取关键词详情
 export async function GET(
@@ -11,13 +10,9 @@ export async function GET(
     const { id } = await params;
     const keywordId = parseInt(id);
 
-    const result = await db
-      .select()
-      .from(keywords)
-      .where(eq(keywords.id, keywordId))
-      .limit(1);
+    const result = await memoryStore.getKeywordById(keywordId);
 
-    if (result.length === 0) {
+    if (!result) {
       return NextResponse.json(
         { success: false, error: '关键词不存在' },
         { status: 404 }
@@ -26,7 +21,7 @@ export async function GET(
 
     return NextResponse.json({
       success: true,
-      data: result[0],
+      data: result,
     });
   } catch (error) {
     console.error('获取关键词详情失败:', error);
@@ -47,19 +42,14 @@ export async function PUT(
     const keywordId = parseInt(id);
     const body = await request.json();
 
-    const updatedKeyword = await db
-      .update(keywords)
-      .set({
-        keyword: body.keyword,
-        priority: body.priority,
-        matchType: body.matchType,
-        status: body.status,
-        updatedAt: new Date(),
-      })
-      .where(eq(keywords.id, keywordId))
-      .returning();
+    const updatedKeyword = await memoryStore.updateKeyword(keywordId, {
+      keyword: body.keyword,
+      priority: body.priority,
+      matchType: body.matchType,
+      status: body.status,
+    });
 
-    if (updatedKeyword.length === 0) {
+    if (!updatedKeyword) {
       return NextResponse.json(
         { success: false, error: '关键词不存在' },
         { status: 404 }
@@ -68,7 +58,7 @@ export async function PUT(
 
     return NextResponse.json({
       success: true,
-      data: updatedKeyword[0],
+      data: updatedKeyword,
       message: '关键词更新成功',
     });
   } catch (error) {
@@ -89,12 +79,9 @@ export async function DELETE(
     const { id } = await params;
     const keywordId = parseInt(id);
 
-    const deletedKeyword = await db
-      .delete(keywords)
-      .where(eq(keywords.id, keywordId))
-      .returning();
+    const deleted = await memoryStore.deleteKeyword(keywordId);
 
-    if (deletedKeyword.length === 0) {
+    if (!deleted) {
       return NextResponse.json(
         { success: false, error: '关键词不存在' },
         { status: 404 }
