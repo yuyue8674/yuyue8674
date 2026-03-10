@@ -9,6 +9,7 @@ import {
   MapPin,
   Search,
   Settings,
+  Sparkles,
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -19,13 +20,17 @@ export default function Sidebar() {
     { icon: Building2, label: '企业管理', href: '/businesses' },
     { icon: Key, label: '关键词管理', href: '/keywords' },
     { icon: MapPin, label: '地理围栏', href: '/geo-fences' },
+    { icon: Sparkles, label: 'AI智能搜索', href: '/ai-search', highlight: true },
     { icon: Search, label: '搜索演示', href: '/search' },
   ];
 
   return (
     <div className="flex h-screen w-64 flex-col bg-gray-900 text-white">
       <div className="flex h-16 items-center justify-center border-b border-gray-800">
-        <h1 className="text-xl font-bold">GEO获客系统</h1>
+        <div className="flex items-center gap-2">
+          <Sparkles className="h-6 w-6 text-blue-400" />
+          <h1 className="text-xl font-bold">GEO获客系统</h1>
+        </div>
       </div>
       <nav className="flex-1 space-y-1 p-4">
         {menuItems.map((item) => {
@@ -37,12 +42,21 @@ export default function Sidebar() {
               href={item.href}
               className={`flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
                 isActive
-                  ? 'bg-blue-600 text-white'
-                  : 'text-gray-400 hover:bg-gray-800 hover:text-white'
+                  ? item.highlight
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                    : 'bg-blue-600 text-white'
+                  : item.highlight
+                    ? 'text-purple-400 hover:bg-gray-800 hover:text-purple-300'
+                    : 'text-gray-400 hover:bg-gray-800 hover:text-white'
               }`}
             >
               <Icon className="h-5 w-5" />
               {item.label}
+              {item.highlight && !isActive && (
+                <span className="ml-auto rounded-full bg-purple-500 px-2 py-0.5 text-xs text-white">
+                  NEW
+                </span>
+              )}
             </Link>
           );
         })}

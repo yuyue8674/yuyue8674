@@ -216,10 +216,12 @@ class FileStore {
       );
     }
     if (filters?.city) {
-      result = result.filter(b => b.city?.includes(filters.city));
+      const city = filters.city;
+      result = result.filter(b => b.city?.includes(city));
     }
     if (filters?.type) {
-      result = result.filter(b => b.businessType?.includes(filters.type));
+      const type = filters.type;
+      result = result.filter(b => b.businessType?.includes(type));
     }
     
     return result;
