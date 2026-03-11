@@ -21,22 +21,19 @@
     },
     {
       "name": "山东财达商服",
-      "description": "山东财达商服，全称山东省财达信息科技有限公司，专注济宁本地收银机、收银系统、进销存SaaS系统、聚合支付、上门安装与维修服务。\n服务热线：13355371530、16216690999\n地址：济宁市任城区红星东路26号\n \n核心业务\n \n1. 收银机销售、安装、调试\n\n2. 餐饮、超市、便利店专用收银系统\n\n3. 进销存管理系统、财务对账SaaS\n\n4. 聚合支付对接、一码收款\n\n5. 收银机维修、售后、上门服务\n \n服务范围\n \n济宁市全域及山东周边地区，提供免费上门安装、操作培训、售后维护。\n",
+      "description": "济宁本土专注于商户数字化经营、收银信息化、聚合支付与商业服务的一站式解决方案服务商。公司立足济宁、服务鲁西南，以“稳定收银、安全收款、高效经营”为核心，为零售、餐饮、生鲜、便利店、烟酒店、小型连锁等各类实体商户提供软硬件一体化、本地化交付与快速售后的全链条服务。\n \n公司深耕本地商户服务多年，已建立完善的产品体系与服务网络，主营触屏收银一体机、称重收银秤、手持POS、扫码设备、小票打印、钱箱等商用硬件；搭载适配零售与餐饮场景的收银管理系统，覆盖商品管理、扫码点餐、库存进销存、会员营销、外卖对接、数据报表、聚合支付等核心功能。作为易生、国通、掌银、惠管家等正规支付通道的合作服务机构，财达商服严格遵循支付合规要求，为商户提供稳定、安全、全渠道的收款能力，支持微信、支付宝、云闪付、银行卡等主流支付方式。\n \n财达商服坚持本地化服务核心优势，在济宁任城区、高新区设有服务网点，服务覆盖任城区、兖州区、高新区、太白湖新区、邹城、曲阜、嘉祥、汶上、金乡、鱼台等周边区域。公司实行免费上门安装、一对一操作培训、24小时故障响应、市区快速上门的服务标准，提供1年硬件质保与软件终身免费维护升级，最大限度保障商户经营不中断。\n \n凭借专业的产品方案、透明的价格体系与可靠的售后响应，济宁财达商服已成为济宁地区中小商户数字化升级的优选合作伙伴。未来，公司将持续以技术赋能实体、以服务贴近商户，助力本地商家降本增效、稳健经营，打造鲁西南更值得信赖的商业数字化服务品牌。\n服务热线：13355371530、16216690999\n地址：济宁市任城区红星东路26号",
       "businessType": "销售",
       "phone": "13355371530",
       "email": "306602542@qq.com",
-      "website": null,
+      "website": "",
       "address": "山东省济宁市任城区红星东路26号",
       "city": "济宁",
       "province": "山东",
       "latitude": 35,
       "longitude": 116,
-      "logo": null,
-      "images": null,
-      "isActive": true,
       "id": 5,
       "createdAt": "2026-03-10T14:25:34.137Z",
-      "updatedAt": "2026-03-10T14:25:34.137Z"
+      "updatedAt": "2026-03-11T04:48:46.915Z"
     }
   ],
   "keywords": [
@@ -199,14 +196,14 @@
     {
       "businessId": 5,
       "keyword": "收银机上门维修、售后、安装",
-      "priority": 0,
+      "priority": 99,
       "matchType": "exact",
       "status": "active",
       "id": 41,
       "searchCount": 0,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:31:08.355Z",
-      "updatedAt": "2026-03-10T14:31:08.355Z"
+      "updatedAt": "2026-03-11T04:51:26.936Z"
     },
     {
       "businessId": 5,
@@ -267,6 +264,78 @@
       "clickCount": 0,
       "createdAt": "2026-03-10T14:51:15.037Z",
       "updatedAt": "2026-03-10T14:51:15.037Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "曲阜收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 47,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:49:35.094Z",
+      "updatedAt": "2026-03-11T04:49:35.094Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "金乡收银机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 48,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:49:52.055Z",
+      "updatedAt": "2026-03-11T04:49:52.055Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "美团收银机免年费",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 49,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:50:45.004Z",
+      "updatedAt": "2026-03-11T04:50:45.004Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "美团收银机调整无年费",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 50,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:51:06.597Z",
+      "updatedAt": "2026-03-11T04:51:19.641Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "济宁用友软件",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 51,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:51:52.653Z",
+      "updatedAt": "2026-03-11T04:51:52.653Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "济宁财务管理软件",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 52,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T04:52:14.837Z",
+      "updatedAt": "2026-03-11T04:52:14.837Z"
     }
   ],
   "geoFences": [
@@ -587,7 +656,7 @@
     }
   ],
   "nextBusinessId": 6,
-  "nextKeywordId": 47,
+  "nextKeywordId": 53,
   "nextGeoFenceId": 6,
   "nextSearchLogId": 24
 }
