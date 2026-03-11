@@ -31,6 +31,9 @@
       "province": "山东",
       "latitude": 35,
       "longitude": 116,
+      "logo": null,
+      "images": null,
+      "isActive": true,
       "id": 5,
       "createdAt": "2026-03-10T14:25:34.137Z",
       "updatedAt": "2026-03-11T04:48:46.915Z"
