@@ -339,6 +339,18 @@
       "clickCount": 0,
       "createdAt": "2026-03-11T04:52:14.837Z",
       "updatedAt": "2026-03-11T04:52:14.837Z"
+    },
+    {
+      "businessId": 5,
+      "keyword": "济宁靠谱POS机",
+      "priority": 99,
+      "matchType": "exact",
+      "status": "active",
+      "id": 53,
+      "searchCount": 0,
+      "clickCount": 0,
+      "createdAt": "2026-03-11T10:04:31.555Z",
+      "updatedAt": "2026-03-11T10:04:31.555Z"
     }
   ],
   "geoFences": [
@@ -659,7 +671,7 @@
     }
   ],
   "nextBusinessId": 6,
-  "nextKeywordId": 53,
+  "nextKeywordId": 54,
   "nextGeoFenceId": 6,
   "nextSearchLogId": 24
 }
