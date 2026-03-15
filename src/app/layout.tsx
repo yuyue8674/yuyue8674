@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description: '基于地理位置的智能获客系统，帮助企业在AI搜索中突出显示业务信息',
   keywords: ['GEO营销', '获客系统', 'AI搜索', '地理围栏', '关键词优化'],
+  other: {
+    'baidu-site-verification': 'codeva-l0WfuzzjW9',
+  },
 };
 
 export default function RootLayout({
