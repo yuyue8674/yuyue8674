@@ -47,10 +47,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 27,
-      "searchCount": 1,
+      "searchCount": 2,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:26:08.726Z",
-      "updatedAt": "2026-03-10T14:32:50.143Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -59,10 +59,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 28,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:26:54.657Z",
-      "updatedAt": "2026-03-10T14:26:54.657Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -71,10 +71,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 29,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:27:11.912Z",
-      "updatedAt": "2026-03-10T14:27:11.912Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -83,10 +83,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 30,
-      "searchCount": 1,
+      "searchCount": 2,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:27:28.156Z",
-      "updatedAt": "2026-03-10T14:32:50.143Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -95,10 +95,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 31,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:27:58.905Z",
-      "updatedAt": "2026-03-10T14:27:58.905Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -107,10 +107,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 32,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:28:23.129Z",
-      "updatedAt": "2026-03-10T14:28:23.129Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -119,10 +119,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 33,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:28:37.754Z",
-      "updatedAt": "2026-03-10T14:28:37.754Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -131,10 +131,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 34,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:28:50.254Z",
-      "updatedAt": "2026-03-10T14:28:50.254Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -167,10 +167,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 37,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:29:51.304Z",
-      "updatedAt": "2026-03-10T14:29:51.304Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -179,10 +179,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 38,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:30:07.737Z",
-      "updatedAt": "2026-03-10T14:30:07.737Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -203,10 +203,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 41,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:31:08.355Z",
-      "updatedAt": "2026-03-11T04:51:26.936Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -215,10 +215,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 42,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:31:55.480Z",
-      "updatedAt": "2026-03-10T14:31:55.480Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -227,10 +227,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 43,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:50:38.042Z",
-      "updatedAt": "2026-03-10T14:50:38.042Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -239,10 +239,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 44,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:50:50.505Z",
-      "updatedAt": "2026-03-10T14:50:50.505Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -251,10 +251,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 45,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:51:05.022Z",
-      "updatedAt": "2026-03-10T14:51:05.022Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -263,10 +263,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 46,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-10T14:51:15.037Z",
-      "updatedAt": "2026-03-10T14:51:15.037Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -275,10 +275,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 47,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-11T04:49:35.094Z",
-      "updatedAt": "2026-03-11T04:49:35.094Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -287,10 +287,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 48,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-11T04:49:52.055Z",
-      "updatedAt": "2026-03-11T04:49:52.055Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -299,10 +299,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 49,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-11T04:50:45.004Z",
-      "updatedAt": "2026-03-11T04:50:45.004Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -311,10 +311,10 @@
       "matchType": "exact",
       "status": "active",
       "id": 50,
-      "searchCount": 0,
+      "searchCount": 1,
       "clickCount": 0,
       "createdAt": "2026-03-11T04:51:06.597Z",
-      "updatedAt": "2026-03-11T04:51:19.641Z"
+      "updatedAt": "2026-03-15T02:03:02.864Z"
     },
     {
       "businessId": 5,
@@ -668,10 +668,36 @@
       "isClicked": false,
       "clickPosition": null,
       "createdAt": "2026-03-10T14:32:50.143Z"
+    },
+    {
+      "id": 24,
+      "keyword": "收银机",
+      "businessId": 5,
+      "userLatitude": null,
+      "userLongitude": null,
+      "userCity": null,
+      "userProvince": null,
+      "deviceType": "desktop",
+      "isClicked": false,
+      "clickPosition": null,
+      "createdAt": "2026-03-15T02:03:02.864Z"
+    },
+    {
+      "id": 25,
+      "keyword": "计算机",
+      "businessId": null,
+      "userLatitude": null,
+      "userLongitude": null,
+      "userCity": null,
+      "userProvince": null,
+      "deviceType": "desktop",
+      "isClicked": false,
+      "clickPosition": null,
+      "createdAt": "2026-03-15T02:03:21.033Z"
     }
   ],
   "nextBusinessId": 6,
   "nextKeywordId": 54,
   "nextGeoFenceId": 6,
-  "nextSearchLogId": 24
+  "nextSearchLogId": 26
 }
