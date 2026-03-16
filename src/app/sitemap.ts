@@ -3,7 +3,7 @@ import { fileStore } from '@/lib/file-store';
 
 // 动态生成sitemap.xml
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yuyue8674.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jining-shouyinji.cn';
   
   // 获取所有企业
   const businesses = await fileStore.getBusinesses();

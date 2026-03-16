@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://yuyue8674.vercel.app',
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.jining-shouyinji.cn',
   },
 };
 
