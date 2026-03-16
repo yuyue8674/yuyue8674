@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   publisher: 'GEO获客系统',
   other: {
     'baidu-site-verification': 'codeva-NunqFN9fNX',
+    'sogou_site_verification': 'WrqpdcXlZw',
   },
   openGraph: {
     type: 'website',
